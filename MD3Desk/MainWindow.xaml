@@ -20,7 +20,9 @@
             </Grid.ColumnDefinitions>
             
             <Grid Name="Display">
-                
+                <Frame>
+                    
+                </Frame>
             </Grid>
             
             <Grid Grid.Column="1" Name="ControlUnit">
