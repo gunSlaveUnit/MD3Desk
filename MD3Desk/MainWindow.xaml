@@ -60,6 +60,31 @@
                                 <ColumnDefinition></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
+                            
+                            <Button></Button>
+                            <Button Grid.Row="0" Grid.Column="1"></Button>
+                            <Button Grid.Row="0" Grid.Column="2"></Button>
+                            <Button Grid.Row="0" Grid.Column="3"></Button>
+                            
+                            <Button Grid.Row="1" Grid.Column="0" ></Button>
+                            <Button Grid.Row="1" Grid.Column="1"></Button>
+                            <Button Grid.Row="1" Grid.Column="2"></Button>
+                            <Button Grid.Row="1" Grid.Column="3"></Button>
+                            
+                            <Button Grid.Row="2" Grid.Column="0"></Button>
+                            <Button Grid.Row="2" Grid.Column="1"></Button>
+                            <Button Grid.Row="2" Grid.Column="2"></Button>
+                            <Button Grid.Row="2" Grid.Column="3"></Button>
+                            
+                            <Button Grid.Row="3" Grid.Column="0"></Button>
+                            <Button Grid.Row="3" Grid.Column="1"></Button>
+                            <Button Grid.Row="3" Grid.Column="2"></Button>
+                            <Button Grid.Row="3" Grid.Column="3"></Button>
+                            
+                            <Button Grid.Row="4" Grid.Column="0"></Button>
+                            <Button Grid.Row="4" Grid.Column="1"></Button>
+                            <Button Grid.Row="4" Grid.Column="2"></Button>
+                            <Button Grid.Row="4" Grid.Column="3"></Button>
                         </Grid>
                         
                         <Grid Grid.Column="2">
@@ -80,15 +105,19 @@
                             <Button></Button>
                             <Button Grid.Row="0" Grid.Column="1"></Button>
                             <Button Grid.Row="0" Grid.Column="2"></Button>
+                            
                             <Button Grid.Row="1" Grid.Column="0" ></Button>
                             <Button Grid.Row="1" Grid.Column="1"></Button>
                             <Button Grid.Row="1" Grid.Column="2"></Button>
+                            
                             <Button Grid.Row="2" Grid.Column="0"></Button>
                             <Button Grid.Row="2" Grid.Column="1"></Button>
                             <Button Grid.Row="2" Grid.Column="2"></Button>
+                            
                             <Button Grid.Row="3" Grid.Column="0"></Button>
                             <Button Grid.Row="3" Grid.Column="1"></Button>
                             <Button Grid.Row="3" Grid.Column="2" Grid.RowSpan="2"></Button>
+                            
                             <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"></Button>
                         </Grid>
                     </Grid>
