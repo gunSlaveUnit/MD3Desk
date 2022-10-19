@@ -11,7 +11,66 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         
-        <Grid Name="Sensors"/>
+        <Grid Name="Sensors">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel>
+                <TextBlock>Сл СВЯЗЬ</TextBlock>
+                <TextBlock>ТЛФ 1, 2</TextBlock>
+                <TextBlock>ТЛФ 3, 4</TextBlock>
+                <TextBlock>СПС</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1">
+                <TextBlock>УЗОЗМ</TextBlock>
+                <TextBlock>ИСПР</TextBlock>
+                <TextBlock>СИНХР</TextBlock>
+                <TextBlock>ТЕСТ</TextBlock>
+                <TextBlock>НОРМА</TextBlock>
+                <TextBlock>ОБРЫВ</TextBlock>
+                <TextBlock>ВЫЗОВ</TextBlock>
+                
+                <TextBlock>АГ</TextBlock>
+                <TextBlock>Л807</TextBlock>
+                <TextBlock>10 МГц</TextBlock>
+                
+                <TextBlock>С 1 / И</TextBlock>
+                <TextBlock>КОНТРОЛЬ</TextBlock>
+                <TextBlock>????????</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="2">
+                <TextBlock>КЛ-У-01</TextBlock>
+                <TextBlock>ПЧ-70</TextBlock>
+                <TextBlock>? ПРМ</TextBlock>
+                <TextBlock>СОИ</TextBlock>
+                <TextBlock>??</TextBlock>
+                <TextBlock>ВКЛ ПРД</TextBlock>
+                <TextBlock>КОНТРОЛЬ</TextBlock>
+                
+                <TextBlock>АГ</TextBlock>
+                <TextBlock>Л807</TextBlock>
+                <TextBlock>10 МГц</TextBlock>
+                
+                <TextBlock>С 1 / И</TextBlock>
+                <TextBlock>КОНТРОЛЬ</TextBlock>
+                <TextBlock>????????</TextBlock>
+            </StackPanel>
+        </Grid>
         
         <Grid Grid.Row="1" Name="Handling">
             <Grid.ColumnDefinitions>
