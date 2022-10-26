@@ -74,9 +74,7 @@
             </Grid.ColumnDefinitions>
             
             <Grid Name="Display">
-                <Frame>
-                    
-                </Frame>
+                <ContentControl Grid.Column="0" Content="{Binding CurrentViewModel }"/>
             </Grid>
             
             <Grid Grid.Column="1" Name="ControlUnit">
@@ -208,7 +206,5 @@
                 </Grid>
             </Grid>
         </Grid>
-        
-        <ContentControl Grid.Row="1" Grid.Column="0" Content="{Binding CurrentViewModel }"/>
     </Grid>
 </Window>
