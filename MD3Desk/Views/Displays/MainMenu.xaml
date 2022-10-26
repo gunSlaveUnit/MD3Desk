@@ -1,4 +1,4 @@
-<UserControl x:Class="MD3Desk.Views.Displays.Main"
+<UserControl x:Class="MD3Desk.Views.Displays.MainMenu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -45,7 +45,7 @@
         <Button Grid.Row="2" Grid.Column="0" 
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019">3. Монитор</Button>
+                Background="#141519" Foreground="#fbb019">2. Монитор</Button>
         
         <Button Grid.Row="2" Grid.Column="1" 
                 BorderBrush="#fbb019"
