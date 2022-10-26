@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              Background="#141519"
              Padding="16"
-             d:DesignHeight="600" d:DesignWidth="800">
+             d:DesignHeight="300" d:DesignWidth="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -30,58 +30,56 @@
         </Grid.ColumnDefinitions>
         
         <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
-                BorderBrush="#fbb019" BorderThickness="4">
-            <TextBlock FontSize="30"
-                       HorizontalAlignment="Center"
+                BorderBrush="#fbb019" BorderThickness="2">
+            <TextBlock HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        Foreground="#fbb019"
                        Text="Контроль АВУР"/>
         </Border>
         
-        <TextBlock Grid.Row="1" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="1" Grid.Column="0" 
                    Foreground="#fbb019"
                    Text="ГС ПРМ: "/>
         
-        <TextBlock Grid.Row="2" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="2" Grid.Column="0"
                    Foreground="#fbb019"
                    Text="Фазирование: "/>
         
-        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="3" Grid.Column="0" 
                    Foreground="#fbb019"
                    Text="ТЛФ1 ПРД: "/>
         
-        <TextBlock Grid.Row="4" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="4" Grid.Column="0"
                    Foreground="#fbb019"
                    Text="ТЛФ2 ПРД: "/>
         
-        <TextBlock Grid.Row="5" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="5" Grid.Column="0"
                    Foreground="#fbb019"
                    Text="ТЛФ3 ПРД: "/>
         
-        <TextBlock Grid.Row="6" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="6" Grid.Column="0"
                    Foreground="#fbb019"
                    Text="ТЛФ4 ПРД: "/>
         
-        <TextBlock Grid.Row="7" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="7" Grid.Column="0" 
                    Foreground="#fbb019"
                    Text="ТЛФ1 ПРМ: "/>
         
-        <TextBlock Grid.Row="8" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="8" Grid.Column="0" 
                    Foreground="#fbb019"
                    Text="ТЛФ2 ПРМ: "/>
         
-        <TextBlock Grid.Row="9" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="9" Grid.Column="0"
                    Foreground="#fbb019"
                    Text="ТЛФ3 ПРМ: "/>
         
-        <TextBlock Grid.Row="10" Grid.Column="0" FontSize="30"
+        <TextBlock Grid.Row="10" Grid.Column="0" 
                    Foreground="#fbb019"
                    Text="ТЛФ4 ПРМ: "/>
         
         <Button Grid.Row="11" Grid.Column="1"
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">0. Выход</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">0. Выход</Button>
     </Grid>
 </UserControl>

@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              Background="#141519"
              Padding="16"
-             d:DesignHeight="600" d:DesignWidth="800">
+             d:DesignHeight="300" d:DesignWidth="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -25,9 +25,8 @@
         </Grid.ColumnDefinitions>
         
         <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
-                BorderBrush="#fbb019" BorderThickness="4">
-            <TextBlock FontSize="30"
-                       HorizontalAlignment="Center"
+                BorderBrush="#fbb019" BorderThickness="2">
+            <TextBlock HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        Foreground="#fbb019"
                        Text="ГЛАВНОЕ"/>
@@ -35,62 +34,52 @@
         
         <Button Grid.Row="1" Grid.Column="0" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">1. СХОС</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">1. СХОС</Button>
         
         <Button Grid.Row="1" Grid.Column="1" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">7. Установка</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">7. Установка</Button>
         
         <Button Grid.Row="2" Grid.Column="0" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">3. Монитор</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">3. Монитор</Button>
         
         <Button Grid.Row="2" Grid.Column="1" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">8. Регламент</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">8. Регламент</Button>
         
         <Button Grid.Row="3" Grid.Column="0" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">3. Сл. связь</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">3. Сл. связь</Button>
         
         <Button Grid.Row="3" Grid.Column="1" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">9. Антенна</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">9. Антенна</Button>
             
         <Button Grid.Row="4" Grid.Column="0" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
-                Background="#141519" Foreground="#fbb019" 
-                FontSize="30">4. Архив команд</Button>
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019" >4. Архив команд</Button>
             
-            <Button Grid.Row="5" Grid.Column="0" 
-                    BorderBrush="#fbb019"
-                    BorderThickness="4"
-                    Background="#141519" Foreground="#fbb019" 
-                    FontSize="30">5. РАТС</Button>
+        <Button Grid.Row="5" Grid.Column="0" 
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">5. РАТС</Button>
             
-            <Button Grid.Row="6" Grid.Column="0" 
-                    BorderBrush="#fbb019"
-                    BorderThickness="4"
-                    Background="#141519" Foreground="#fbb019" 
-                    FontSize="30">6. ПРД</Button>
+        <Button Grid.Row="6" Grid.Column="0" 
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">6. ПРД</Button>
             
-            <Button Grid.Row="6" Grid.Column="1" 
-                    BorderBrush="#fbb019"
-                    BorderThickness="4"
-                    Background="#141519" Foreground="#fbb019" 
-                    FontSize="30">0. Ок. сеанса</Button>
+        <Button Grid.Row="6" Grid.Column="1" 
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">0. Ок. сеанса</Button>
     </Grid>
 </UserControl>
