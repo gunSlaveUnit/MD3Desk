@@ -10,6 +10,11 @@
         <vm:MainViewModel/>
     </Window.DataContext>
     
+    <Window.InputBindings>
+        <KeyBinding Command="{Binding ChangeCurrentViewCommand}" CommandParameter="{Binding MainMenuVm}" Key="D1"></KeyBinding>
+        <KeyBinding Command="{Binding ChangeCurrentViewCommand}" CommandParameter="{Binding MainMenuVm}" Key="D2"></KeyBinding>
+    </Window.InputBindings>
+    
     <Grid Name="Station">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
