@@ -21,7 +21,7 @@ public class MainMenuViewModel : ViewModel
         ??= new RelayCommand(OnNavigateMonitorCommandExecuted, CanNavigateMonitorCommandExecute);
 
     private void OnNavigateMonitorCommandExecuted(object parameter)
-        => _parent.CurrentViewModel = _parent.NoSHOSWarningVm;
+        => _parent.CurrentViewModel = _parent.SHOSVm.IsConfigured ? _parent.MonitorVm : _parent.NoSHOSWarningVm;
         
     private bool CanNavigateMonitorCommandExecute(object parameter) => true;
         
