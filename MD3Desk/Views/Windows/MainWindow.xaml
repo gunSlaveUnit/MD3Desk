@@ -4,8 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:MD3Desk.ViewModels"
+        xmlns:converters="clr-namespace:MD3Desk.Infrastructure.Converters"
+        x:Name="MD3DeskWindow"
         mc:Ignorable="d"
+        SizeChanged="WindowSizeChanged"
         Title="MainWindow" Height="600" Width="800">
+    <Window.Resources>
+        <converters:FontScaleConverter x:Key="FontScaleConverter" />
+    </Window.Resources>
+    
     <Window.DataContext>
         <vm:MainViewModel/>
     </Window.DataContext>
@@ -31,7 +38,10 @@
             </StackPanel>
             
             <StackPanel Grid.Column="1">
-                <TextBlock>УЗОЗМ</TextBlock>
+                <TextBlock FontSize="{Binding ElementName=MD3DeskWindow,
+                                              Path=FontScale,
+                                              Converter={StaticResource FontScaleConverter}, 
+                                              ConverterParameter=1.5}">УЗОЗМ</TextBlock>
                 <TextBlock>ИСПР</TextBlock>
                 <TextBlock>СИНХР</TextBlock>
                 <TextBlock>ТЕСТ</TextBlock>
@@ -95,7 +105,12 @@
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     
-                    <Button>ECS</Button>
+                    <Button>
+                        <TextBlock FontSize="{Binding ElementName=MD3DeskWindow,
+                                              Path=FontScale,
+                                              Converter={StaticResource FontScaleConverter}, 
+                                              ConverterParameter=1.5}">ESC</TextBlock>
+                    </Button>
                     <Button Grid.Column="1">F1</Button>
                     <Button Grid.Column="2">F2</Button>
                     <Button Grid.Column="3">F3</Button>
