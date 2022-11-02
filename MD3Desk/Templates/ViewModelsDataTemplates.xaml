@@ -3,10 +3,10 @@
                     xmlns:displays="clr-namespace:MD3Desk.Views.Displays"
                     xmlns:monitor="clr-namespace:MD3Desk.ViewModels.Monitor">
     <DataTemplate DataType="{x:Type monitor:StartViewModel}">
-        <displays:Start />
+        <displays:Start DataContext="{Binding}"></displays:Start>
     </DataTemplate>
     
     <DataTemplate DataType="{x:Type monitor:MainMenuViewModel}">
-        <displays:MainMenu />
+        <displays:MainMenu DataContext="{Binding}"></displays:MainMenu>
     </DataTemplate>
 </ResourceDictionary>
