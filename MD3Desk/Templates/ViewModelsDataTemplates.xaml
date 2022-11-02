@@ -10,6 +10,10 @@
         <displays:MainMenu DataContext="{Binding}"></displays:MainMenu>
     </DataTemplate>
     
+    <DataTemplate DataType="{x:Type monitor:SHOSViewModel}">
+        <displays:SHOS DataContext="{Binding}"></displays:SHOS>
+    </DataTemplate>
+    
     <DataTemplate DataType="{x:Type monitor:NoSHOSWarningViewModel}">
         <displays:NoSHOSWarning DataContext="{Binding}"></displays:NoSHOSWarning>
     </DataTemplate>
