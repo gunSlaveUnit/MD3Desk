@@ -45,7 +45,7 @@
         <Button Grid.Row="2" Grid.Column="0" 
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019" Command="{Binding NavigateSHOSCommand}">2. Монитор</Button>
+                Background="#141519" Foreground="#fbb019" Command="{Binding NavigateMonitorCommand}">2. Монитор</Button>
         
         <Button Grid.Row="2" Grid.Column="1" 
                 BorderBrush="#fbb019"

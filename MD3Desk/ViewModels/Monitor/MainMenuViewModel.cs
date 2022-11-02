@@ -14,19 +14,19 @@ public class MainMenuViewModel : ViewModel
 
     #region Commands
 
-    #region NavigateSHOSCommand
+    #region NavigateMonitorCommand
         
-    private ICommand _navigateSHOSCommand;
-    public ICommand NavigateSHOSCommand => _navigateSHOSCommand
-        ??= new RelayCommand(OnNavigateSHOSCommandExecuted, CanNavigateSHOSCommandExecute);
+    private ICommand _navigateMonitorCommand;
+    public ICommand NavigateMonitorCommand => _navigateMonitorCommand
+        ??= new RelayCommand(OnNavigateMonitorCommandExecuted, CanNavigateMonitorCommandExecute);
 
-    private void OnNavigateSHOSCommandExecuted(object parameter)
+    private void OnNavigateMonitorCommandExecuted(object parameter)
         => _parent.CurrentViewModel = _parent.NoSHOSWarningVm;
         
-    private bool CanNavigateSHOSCommandExecute(object parameter) => true;
+    private bool CanNavigateMonitorCommandExecute(object parameter) => true;
         
     #endregion
-
+    
     #endregion
     
     public MainMenuViewModel(MainViewModel parent)
