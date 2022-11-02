@@ -16,7 +16,7 @@ public class MainViewModel : ViewModel
     public ViewModel CurrentViewModel
     {
         get => _currentViewModel;
-        private set => Set(ref _currentViewModel, value);
+        set => Set(ref _currentViewModel, value);
     }
     
     #endregion
@@ -47,26 +47,9 @@ public class MainViewModel : ViewModel
     
     #endregion
 
-    #region Commands
-
-    #region ChangeCurrentViewCommand
-        
-    private ICommand _changeCurrentView;
-    public ICommand ChangeCurrentViewCommand => _changeCurrentView
-        ??= new RelayCommand(OnChangeCurrentViewCommandExecuted, CanChangeCurrentViewCommandExecute);
-
-    private void OnChangeCurrentViewCommandExecuted(object parameter)
-        => CurrentViewModel = (ViewModel) parameter;
-        
-    private bool CanChangeCurrentViewCommandExecute(object parameter) => true;
-        
-    #endregion
-
-    #endregion
-
     public MainViewModel()
     {
-        StartVm = new StartViewModel();
+        StartVm = new StartViewModel(this);
         MainMenuVm = new MainMenuViewModel();
         CurrentViewModel = StartVm;
     }
