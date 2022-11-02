@@ -9,4 +9,12 @@
     <DataTemplate DataType="{x:Type monitor:MainMenuViewModel}">
         <displays:MainMenu DataContext="{Binding}"></displays:MainMenu>
     </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type monitor:NoSHOSWarningViewModel}">
+        <displays:NoSHOSWarning DataContext="{Binding}"></displays:NoSHOSWarning>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type monitor:MonitorViewModel}">
+        <displays:Monitor DataContext="{Binding}"></displays:Monitor>
+    </DataTemplate>
 </ResourceDictionary>
