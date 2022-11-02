@@ -27,6 +27,19 @@ public class MainMenuViewModel : ViewModel
         
     #endregion
     
+    #region NavigateSettingsCommand
+        
+    private ICommand _navigateSettingsCommand;
+    public ICommand NavigateSettingsCommand => _navigateSettingsCommand
+        ??= new RelayCommand(OnNavigateSettingsCommandExecuted, CanNavigateSettingsCommandExecute);
+
+    private void OnNavigateSettingsCommandExecuted(object parameter)
+        => _parent.CurrentViewModel = _parent.SettingsVm;
+        
+    private bool CanNavigateSettingsCommandExecute(object parameter) => true;
+        
+    #endregion
+    
     #endregion
     
     public MainMenuViewModel(MainViewModel parent)
