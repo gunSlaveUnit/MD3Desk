@@ -45,6 +45,18 @@ public class MainViewModel : ViewModel
 
     #endregion
     
+    #region SHOSViewModel
+
+    private SHOSViewModel _shosViewModel;
+    
+    public SHOSViewModel SHOSVm
+    {
+        get => _shosViewModel;
+        private set => Set(ref _shosViewModel, value);
+    }
+
+    #endregion
+    
     #region NoSHOWarningViewModel
 
     private NoSHOSWarningViewModel _noSHOWarningViewModel;
@@ -75,6 +87,7 @@ public class MainViewModel : ViewModel
     {
         StartVm = new StartViewModel(this);
         MainMenuVm = new MainMenuViewModel(this);
+        SHOSVm = new SHOSViewModel(this);
         NoSHOSWarningVm = new NoSHOSWarningViewModel(this);
         MonitorVm = new MonitorViewModel(this);
         CurrentViewModel = StartVm;
