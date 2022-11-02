@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:displays="clr-namespace:MD3Desk.Views.Displays"
                     xmlns:monitor="clr-namespace:MD3Desk.ViewModels.Monitor"
-                    xmlns:settings="clr-namespace:MD3Desk.Views.Displays.Settings">
+                    xmlns:settings="clr-namespace:MD3Desk.Views.Displays.Settings"
+                    xmlns:monitor1="clr-namespace:MD3Desk.ViewModels.Monitor.Settings">
     <DataTemplate DataType="{x:Type monitor:StartViewModel}">
         <displays:Start DataContext="{Binding}"></displays:Start>
     </DataTemplate>
@@ -25,5 +26,9 @@
     
     <DataTemplate DataType="{x:Type monitor:SettingsViewModel}">
         <settings:Settings DataContext="{Binding}"></settings:Settings>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type monitor1:CommonViewModel}">
+        <settings:Common DataContext="{Binding}"></settings:Common>
     </DataTemplate>
 </ResourceDictionary>
