@@ -64,7 +64,7 @@
         
         <Button Grid.Row="3" Grid.Column="3" 
                 BorderBrush="#fbb019"
-                BorderThickness="4"
+                BorderThickness="2"
                 Background="#141519" Foreground="#fbb019">3. Поиск</Button>
         
         <TextBlock Grid.Row="4" Grid.Column="0"
