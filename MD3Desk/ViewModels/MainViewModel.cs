@@ -45,12 +45,38 @@ public class MainViewModel : ViewModel
 
     #endregion
     
+    #region NoSHOWarningViewModel
+
+    private NoSHOSWarningViewModel _noSHOWarningViewModel;
+    
+    public NoSHOSWarningViewModel NoSHOSWarningVm
+    {
+        get => _noSHOWarningViewModel;
+        private set => Set(ref _noSHOWarningViewModel, value);
+    }
+
+    #endregion
+    
+    #region MonitorViewModel
+
+    private MonitorViewModel _monitorViewModel;
+    
+    public MonitorViewModel MonitorVm
+    {
+        get => _monitorViewModel;
+        private set => Set(ref _monitorViewModel, value);
+    }
+
+    #endregion
+    
     #endregion
 
     public MainViewModel()
     {
         StartVm = new StartViewModel(this);
-        MainMenuVm = new MainMenuViewModel();
+        MainMenuVm = new MainMenuViewModel(this);
+        NoSHOSWarningVm = new NoSHOSWarningViewModel(this);
+        MonitorVm = new MonitorViewModel(this);
         CurrentViewModel = StartVm;
     }
 }
