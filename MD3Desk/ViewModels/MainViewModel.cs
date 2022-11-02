@@ -81,6 +81,18 @@ public class MainViewModel : ViewModel
 
     #endregion
     
+    #region SettingsViewModel
+
+    private SettingsViewModel _settingsViewModel;
+    
+    public SettingsViewModel SettingsVm
+    {
+        get => _settingsViewModel;
+        private set => Set(ref _settingsViewModel, value);
+    }
+    
+    #endregion
+    
     #endregion
 
     public MainViewModel()
@@ -90,6 +102,7 @@ public class MainViewModel : ViewModel
         SHOSVm = new SHOSViewModel(this);
         NoSHOSWarningVm = new NoSHOSWarningViewModel(this);
         MonitorVm = new MonitorViewModel(this);
+        SettingsVm = new SettingsViewModel(this);
         CurrentViewModel = StartVm;
     }
 }
