@@ -2,6 +2,7 @@ using System.Windows.Input;
 using MD3Desk.Infrastructure.Commands.Base;
 using MD3Desk.ViewModels.Base;
 using MD3Desk.ViewModels.Monitor;
+using MD3Desk.ViewModels.Monitor.Settings;
 
 namespace MD3Desk.ViewModels;
 
@@ -93,6 +94,18 @@ public class MainViewModel : ViewModel
     
     #endregion
     
+    #region CommonViewModel
+
+    private CommonViewModel _commonViewModel;
+    
+    public CommonViewModel CommonVm
+    {
+        get => _commonViewModel;
+        private set => Set(ref _commonViewModel, value);
+    }
+    
+    #endregion
+    
     #endregion
 
     public MainViewModel()
@@ -103,6 +116,8 @@ public class MainViewModel : ViewModel
         NoSHOSWarningVm = new NoSHOSWarningViewModel(this);
         MonitorVm = new MonitorViewModel(this);
         SettingsVm = new SettingsViewModel(this);
+        CommonVm = new CommonViewModel(this);
+        
         CurrentViewModel = StartVm;
     }
 }
