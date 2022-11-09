@@ -45,7 +45,7 @@
                 BorderBrush="#fbb019"
                 BorderThickness="2"
                 Background="#141519" Foreground="#fbb019" 
-                Command="{Binding Parent.Navigator.NavigateMonitorCommand}">1. Да</Button>
+                Command="{Binding Parent.Navigator.NavigateMonitorWithoutShosCheckingCommand}">1. Да</Button>
         
         <Button Grid.Row="3" Grid.Column="1" 
                 BorderBrush="#fbb019"

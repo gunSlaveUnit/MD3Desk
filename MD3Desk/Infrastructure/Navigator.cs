@@ -38,6 +38,21 @@ public class Navigator
         
     #endregion
     
+    #region 2*. NavigateMonitorCommandWithoutShosChecking
+        
+    private ICommand _navigateMonitorWithoutShosCheckingCommand;
+    public ICommand NavigateMonitorWithoutShosCheckingCommand => _navigateMonitorWithoutShosCheckingCommand
+        ??= new RelayCommand(OnNavigateMonitorWithoutShosCheckingCommandExecuted, CanNavigateMonitorWithoutShosCheckingCommandExecute);
+
+    private void OnNavigateMonitorWithoutShosCheckingCommandExecuted(object parameter)
+    {
+        _parent.CurrentViewModel = _parent.MonitorVm;
+    }
+        
+    private bool CanNavigateMonitorWithoutShosCheckingCommandExecute(object parameter) => true;
+        
+    #endregion
+    
     #region 7. NavigateSettingsCommand
         
     private ICommand _navigateSettingsCommand;
