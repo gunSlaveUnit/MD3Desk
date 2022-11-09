@@ -4,9 +4,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:MD3Desk.Views.Windows"
+        xmlns:viewModels="clr-namespace:MD3Desk.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="600" Width="800">
+    
+    <Window.DataContext>
+        <viewModels:MainViewModel/>
+    </Window.DataContext>
+    
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Command="{Binding OpenStationEmulatorCommand}">Работа на эмуляторе</Button>
+    </StackPanel>
 </Window>
