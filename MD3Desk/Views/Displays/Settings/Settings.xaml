@@ -54,6 +54,7 @@
         <Button Grid.Row="5" Grid.Column="1"
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019">0. Выход</Button>
+                Background="#141519" Foreground="#fbb019"
+                Command="{Binding NavigateMainMenuCommand}">0. Выход</Button>
     </Grid>
 </UserControl>
