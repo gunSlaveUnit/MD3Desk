@@ -5,7 +5,7 @@ using System.Windows;
 
 namespace MD3Desk.Views.Windows
 {
-    public partial class MainWindow : Window, INotifyPropertyChanged
+    public partial class StationEmulatorWindow : Window, INotifyPropertyChanged
     {
         #region Properties
 
@@ -13,7 +13,7 @@ namespace MD3Desk.Views.Windows
     
         #endregion
         
-        public MainWindow()
+        public StationEmulatorWindow()
         {
             InitializeComponent();
             calcucateFontScale();
