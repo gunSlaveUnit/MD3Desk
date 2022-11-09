@@ -6,7 +6,7 @@ using MD3Desk.ViewModels.Monitor.Settings;
 
 namespace MD3Desk.ViewModels;
 
-public class MainViewModel : ViewModel
+public class StationEmulatorViewModel : ViewModel
 {
     #region Properties
 
@@ -181,7 +181,7 @@ public class MainViewModel : ViewModel
 
     #endregion
 
-    public MainViewModel()
+    public StationEmulatorViewModel()
     {
         StartVm = new StartViewModel(this);
         MainMenuVm = new MainMenuViewModel(this);

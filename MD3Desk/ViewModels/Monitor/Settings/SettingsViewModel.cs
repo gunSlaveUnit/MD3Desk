@@ -4,7 +4,7 @@ namespace MD3Desk.ViewModels.Monitor.Settings;
 
 public class SettingsViewModel : Child
 {
-    public SettingsViewModel(MainViewModel parent)
+    public SettingsViewModel(StationEmulatorViewModel parent)
     {
         Parent = parent;
     }

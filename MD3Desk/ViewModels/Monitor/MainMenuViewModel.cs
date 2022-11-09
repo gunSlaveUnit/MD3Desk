@@ -4,7 +4,7 @@ namespace MD3Desk.ViewModels.Monitor;
 
 public class MainMenuViewModel : Child
 {
-    public MainMenuViewModel(MainViewModel parent)
+    public MainMenuViewModel(StationEmulatorViewModel parent)
     {
         Parent = parent;
     }

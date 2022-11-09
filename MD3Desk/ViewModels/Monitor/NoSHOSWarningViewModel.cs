@@ -4,7 +4,7 @@ namespace MD3Desk.ViewModels.Monitor;
 
 public class NoSHOSWarningViewModel : Child
 {
-    public NoSHOSWarningViewModel(MainViewModel parent)
+    public NoSHOSWarningViewModel(StationEmulatorViewModel parent)
     {
         Parent = parent;
     }

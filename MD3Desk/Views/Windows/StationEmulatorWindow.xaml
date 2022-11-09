@@ -14,7 +14,7 @@
     </Window.Resources>
     
     <Window.DataContext>
-        <vm:MainViewModel/>
+        <vm:StationEmulatorViewModel/>
     </Window.DataContext>
     
     <Grid Name="Station">

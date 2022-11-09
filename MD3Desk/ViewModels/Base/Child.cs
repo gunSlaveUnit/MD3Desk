@@ -6,9 +6,9 @@ public class Child : ViewModel
 
     #region Parent 
     
-    private MainViewModel _parent;
+    private StationEmulatorViewModel _parent;
     
-    public MainViewModel Parent
+    public StationEmulatorViewModel Parent
     {
         get => _parent;
         set => Set(ref _parent, value);

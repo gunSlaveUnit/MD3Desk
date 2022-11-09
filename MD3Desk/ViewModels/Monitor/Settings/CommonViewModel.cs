@@ -4,7 +4,7 @@ namespace MD3Desk.ViewModels.Monitor.Settings;
 
 public class CommonViewModel : Child
 {
-    public CommonViewModel(MainViewModel parent)
+    public CommonViewModel(StationEmulatorViewModel parent)
     {
         Parent = parent;
     }

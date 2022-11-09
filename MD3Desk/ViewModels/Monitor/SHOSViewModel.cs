@@ -6,7 +6,7 @@ public class SHOSViewModel : Child
 {
     public readonly bool IsConfigured;
 
-    public SHOSViewModel(MainViewModel parent)
+    public SHOSViewModel(StationEmulatorViewModel parent)
     {
         Parent = parent;
         IsConfigured = false;
