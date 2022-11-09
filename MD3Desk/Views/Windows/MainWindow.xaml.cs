@@ -26,7 +26,7 @@ namespace MD3Desk.Views.Windows
 
         private void calcucateFontScale()
         {
-            FontScale = Width / 80.0;
+            FontScale = (Height + Width) / 160;
             OnPropertyChanged("FontScale");
         }
 
