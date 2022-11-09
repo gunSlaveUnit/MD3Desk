@@ -1,4 +1,5 @@
 using System.Windows.Input;
+using MD3Desk.Infrastructure;
 using MD3Desk.Infrastructure.Commands.Base;
 using MD3Desk.ViewModels.Base;
 using MD3Desk.ViewModels.Monitor;
@@ -8,20 +9,8 @@ namespace MD3Desk.ViewModels;
 
 public class MainViewModel : ViewModel
 {
-    #region Properties 
-    
-    #region CurrrentViewModel 
-    
-    private ViewModel _currentViewModel;
-    
-    public ViewModel CurrentViewModel
-    {
-        get => _currentViewModel;
-        set => Set(ref _currentViewModel, value);
-    }
-    
-    #endregion
-    
+    #region Properties
+
     #region StartViewModel
     
     private StartViewModel _startViewModel;
@@ -106,6 +95,30 @@ public class MainViewModel : ViewModel
     
     #endregion
     
+    #region CurrrentViewModel 
+    
+    private ViewModel _currentViewModel;
+    
+    public ViewModel CurrentViewModel
+    {
+        get => _currentViewModel;
+        set => Set(ref _currentViewModel, value);
+    }
+    
+    #endregion
+    
+    #region Navigator
+
+    private Navigator _navigator;
+
+    public Navigator Navigator
+    {
+        get => _navigator;
+        private set => Set(ref _navigator, value);
+    }
+
+    #endregion
+
     #endregion
 
     public MainViewModel()
@@ -119,5 +132,6 @@ public class MainViewModel : ViewModel
         CommonVm = new CommonViewModel(this);
         
         CurrentViewModel = StartVm;
+        Navigator = new Navigator(this);
     }
 }
