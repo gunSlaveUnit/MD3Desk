@@ -35,7 +35,7 @@
                 BorderBrush="#fbb019"
                 BorderThickness="2"
                 Background="#141519" Foreground="#fbb019" 
-                Command="{Binding Parent.Navigator.NavigateCommonCommand}">1. Общая</Button>
+                Command="{Binding Parent.NavigateCommonCommand}">1. Общая</Button>
         
         <Button Grid.Row="2" Grid.Column="0"
                 BorderBrush="#fbb019"
@@ -56,6 +56,6 @@
                 BorderBrush="#fbb019"
                 BorderThickness="2"
                 Background="#141519" Foreground="#fbb019"
-                Command="{Binding NavigateMainMenuCommand}">0. Выход</Button>
+                Command="{Binding Parent.NavigateMainMenuCommand}">0. Выход</Button>
     </Grid>
 </UserControl>

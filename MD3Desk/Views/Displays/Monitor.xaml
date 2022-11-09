@@ -106,6 +106,6 @@
                 BorderBrush="#fbb019"
                 BorderThickness="2"
                 Background="#141519" Foreground="#fbb019" 
-                Command="{Binding Parent.Navigator.NavigateMainMenuCommand}">0. Выход</Button>
+                Command="{Binding Parent.NavigateMainMenuCommand}">0. Выход</Button>
     </Grid>
 </UserControl>

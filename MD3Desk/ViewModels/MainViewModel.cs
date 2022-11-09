@@ -1,5 +1,4 @@
 using System.Windows.Input;
-using MD3Desk.Infrastructure;
 using MD3Desk.Infrastructure.Commands.Base;
 using MD3Desk.ViewModels.Base;
 using MD3Desk.ViewModels.Monitor;
@@ -107,16 +106,77 @@ public class MainViewModel : ViewModel
     
     #endregion
     
-    #region Navigator
+    #endregion
+    
+    #region Commands
+    
+    #region NavigateMainMenuCommand
+        
+    private ICommand _navigateMainMenuCommand;
+    public ICommand NavigateMainMenuCommand => _navigateMainMenuCommand
+        ??= new RelayCommand(OnNavigateMainMenuCommandExecuted, CanNavigateMainMenuCommandExecute);
 
-    private Navigator _navigator;
+    private void OnNavigateMainMenuCommandExecuted(object parameter)
+        => CurrentViewModel = MainMenuVm;
+        
+    private bool CanNavigateMainMenuCommandExecute(object parameter) => true;
+        
+    #endregion
 
-    public Navigator Navigator
+    #region 2. NavigateMonitorCommand
+        
+    private ICommand _navigateMonitorCommand;
+    public ICommand NavigateMonitorCommand => _navigateMonitorCommand
+        ??= new RelayCommand(OnNavigateMonitorCommandExecuted, CanNavigateMonitorCommandExecute);
+
+    private void OnNavigateMonitorCommandExecuted(object parameter)
     {
-        get => _navigator;
-        private set => Set(ref _navigator, value);
+        CurrentViewModel = SHOSVm.IsConfigured ? MonitorVm : NoSHOSWarningVm;
     }
+        
+    private bool CanNavigateMonitorCommandExecute(object parameter) => true;
+        
+    #endregion
+    
+    #region 2*. NavigateMonitorCommandWithoutShosChecking
+        
+    private ICommand _navigateMonitorWithoutShosCheckingCommand;
+    public ICommand NavigateMonitorWithoutShosCheckingCommand => _navigateMonitorWithoutShosCheckingCommand
+        ??= new RelayCommand(OnNavigateMonitorWithoutShosCheckingCommandExecuted, CanNavigateMonitorWithoutShosCheckingCommandExecute);
 
+    private void OnNavigateMonitorWithoutShosCheckingCommandExecuted(object parameter)
+    {
+        CurrentViewModel = MonitorVm;
+    }
+        
+    private bool CanNavigateMonitorWithoutShosCheckingCommandExecute(object parameter) => true;
+        
+    #endregion
+    
+    #region 7. NavigateSettingsCommand
+        
+    private ICommand _navigateSettingsCommand;
+    public ICommand NavigateSettingsCommand => _navigateSettingsCommand
+        ??= new RelayCommand(OnNavigateSettingsCommandExecuted, CanNavigateSettingsCommandExecute);
+
+    private void OnNavigateSettingsCommandExecuted(object parameter)
+        => CurrentViewModel = SettingsVm;
+        
+    private bool CanNavigateSettingsCommandExecute(object parameter) => true;
+        
+    #endregion
+    
+    #region 7.1. NavigateCommonCommand
+        
+    private ICommand _navigateCommonCommand;
+    public ICommand NavigateCommonCommand => _navigateCommonCommand
+        ??= new RelayCommand(OnNavigateCommonCommandExecuted, CanNavigateCommonCommandExecute);
+
+    private void OnNavigateCommonCommandExecuted(object parameter)
+        => CurrentViewModel = CommonVm;
+        
+    private bool CanNavigateCommonCommandExecute(object parameter) => true;
+        
     #endregion
 
     #endregion
@@ -132,6 +192,5 @@ public class MainViewModel : ViewModel
         CommonVm = new CommonViewModel(this);
         
         CurrentViewModel = StartVm;
-        Navigator = new Navigator(this);
     }
 }
