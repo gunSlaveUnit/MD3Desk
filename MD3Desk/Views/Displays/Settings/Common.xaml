@@ -85,6 +85,6 @@
                 BorderBrush="#fbb019"
                 BorderThickness="2"
                 Background="#141519" Foreground="#fbb019"
-                Command="{Binding NavigateSettingsCommand}">0. Выход</Button>
+                Command="{Binding Parent.Navigator.NavigateSettingsCommand}">0. Выход</Button>
     </Grid>
 </UserControl>

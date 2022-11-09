@@ -31,11 +31,13 @@
         <Button Grid.Row="2" Grid.Column="0" 
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019" Command="{Binding NavigateMainMenuCommand}">1. Да</Button>
+                Background="#141519" Foreground="#fbb019" 
+                Command="{Binding Parent.Navigator.NavigateMainMenuCommand}">1. Да</Button>
         
         <Button Grid.Row="2" Grid.Column="1"
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019" Command="{Binding NavigateMainMenuCommand}">2. Нет</Button>
+                Background="#141519" Foreground="#fbb019" 
+                Command="{Binding Parent.Navigator.NavigateMainMenuCommand}">2. Нет</Button>
     </Grid>
 </UserControl>

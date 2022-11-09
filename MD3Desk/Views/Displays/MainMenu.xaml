@@ -40,12 +40,14 @@
         <Button Grid.Row="1" Grid.Column="1" 
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019" Command="{Binding NavigateSettingsCommand}">7. Установка</Button>
+                Background="#141519" Foreground="#fbb019" 
+                Command="{Binding Parent.Navigator.NavigateSettingsCommand}">7. Установка</Button>
         
         <Button Grid.Row="2" Grid.Column="0" 
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019" Command="{Binding Parent.Navigator.NavigateMonitorCommand}">2. Монитор</Button>
+                Background="#141519" Foreground="#fbb019" 
+                Command="{Binding Parent.Navigator.Parent.Navigator.NavigateMonitorCommand}">2. Монитор</Button>
         
         <Button Grid.Row="2" Grid.Column="1" 
                 BorderBrush="#fbb019"

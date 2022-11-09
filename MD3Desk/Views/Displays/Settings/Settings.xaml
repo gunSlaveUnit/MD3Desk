@@ -34,7 +34,8 @@
         <Button Grid.Row="1" Grid.Column="0"
                 BorderBrush="#fbb019"
                 BorderThickness="2"
-                Background="#141519" Foreground="#fbb019" Command="{Binding NavigateCommonCommand}">1. Общая</Button>
+                Background="#141519" Foreground="#fbb019" 
+                Command="{Binding Parent.Navigator.NavigateCommonCommand}">1. Общая</Button>
         
         <Button Grid.Row="2" Grid.Column="0"
                 BorderBrush="#fbb019"
