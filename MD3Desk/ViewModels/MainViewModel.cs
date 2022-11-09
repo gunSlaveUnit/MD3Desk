@@ -42,6 +42,6 @@ public class MainViewModel : ViewModel
     
     public MainViewModel()
     {
-        
+        StationEmulatorWindow = new StationEmulatorWindow();
     }
 }
