@@ -2,19 +2,13 @@ using MD3Desk.ViewModels.Base;
 
 namespace MD3Desk.ViewModels.Monitor;
 
-public class SHOSViewModel : ViewModel
+public class SHOSViewModel : Child
 {
-    #region Properties
-
-    private readonly MainViewModel _parent;
-    
-    public bool IsConfigured;
-
-    #endregion
+    public readonly bool IsConfigured;
 
     public SHOSViewModel(MainViewModel parent)
     {
-        _parent = parent;
+        Parent = parent;
         IsConfigured = false;
     }
 }

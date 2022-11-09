@@ -3,7 +3,7 @@
                     xmlns:displays="clr-namespace:MD3Desk.Views.Displays"
                     xmlns:monitor="clr-namespace:MD3Desk.ViewModels.Monitor"
                     xmlns:settings="clr-namespace:MD3Desk.Views.Displays.Settings"
-                    xmlns:monitor1="clr-namespace:MD3Desk.ViewModels.Monitor.Settings">
+                    xmlns:monitorSettings="clr-namespace:MD3Desk.ViewModels.Monitor.Settings">
     <DataTemplate DataType="{x:Type monitor:StartViewModel}">
         <displays:Start DataContext="{Binding}"></displays:Start>
     </DataTemplate>
@@ -24,11 +24,11 @@
         <displays:Monitor DataContext="{Binding}"></displays:Monitor>
     </DataTemplate>
     
-    <DataTemplate DataType="{x:Type monitor:SettingsViewModel}">
+    <DataTemplate DataType="{x:Type monitorSettings:SettingsViewModel}">
         <settings:Settings DataContext="{Binding}"></settings:Settings>
     </DataTemplate>
     
-    <DataTemplate DataType="{x:Type monitor1:CommonViewModel}">
+    <DataTemplate DataType="{x:Type monitorSettings:CommonViewModel}">
         <settings:Common DataContext="{Binding}"></settings:Common>
     </DataTemplate>
 </ResourceDictionary>
