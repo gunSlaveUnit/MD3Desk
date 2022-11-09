@@ -47,7 +47,7 @@
                 BorderBrush="#fbb019"
                 BorderThickness="2"
                 Background="#141519" Foreground="#fbb019" 
-                Command="{Binding Parent.Navigator.Parent.Navigator.NavigateMonitorCommand}">2. Монитор</Button>
+                Command="{Binding Parent.Navigator.NavigateMonitorCommand}">2. Монитор</Button>
         
         <Button Grid.Row="2" Grid.Column="1" 
                 BorderBrush="#fbb019"
