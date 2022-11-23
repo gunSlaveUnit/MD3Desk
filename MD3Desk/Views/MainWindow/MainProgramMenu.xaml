@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              d:DesignHeight="600" d:DesignWidth="800">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button Command="{Binding OpenStationEmulatorCommand}">Содержимое и сборка</Button>
+        <Button Command="{Binding Parent.NavigateAssemblyCommand}">Содержимое и сборка</Button>
         <Button Command="{Binding Parent.OpenStationEmulatorCommand}">Работа на эмуляторе</Button>
     </StackPanel>
 </UserControl>
