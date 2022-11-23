@@ -16,9 +16,9 @@ public class StationEmulatorViewModel : ViewModel
     
     #region IsTutorialMode
     
-    private Visibility _isTutorialMode;
+    private bool _isTutorialMode;
     
-    public Visibility IsTutorialMode
+    public bool IsTutorialMode
     {
         get => _isTutorialMode;
         private set => Set(ref _isTutorialMode, value);
@@ -145,7 +145,12 @@ public class StationEmulatorViewModel : ViewModel
         ??= new RelayCommand(OnNavigateMainMenuCommandExecuted, CanNavigateMainMenuCommandExecute);
 
     private void OnNavigateMainMenuCommandExecuted(object parameter)
-        => CurrentViewModel = MainMenuVm;
+    {
+        if (IsTutorialMode)
+            TargetTutorialDocument = File.ReadAllText(Path.Join(TutorialDocumentsPath, "Main.md"));
+            
+        CurrentViewModel = MainMenuVm;
+    }
         
     private bool CanNavigateMainMenuCommandExecute(object parameter) => true;
         
@@ -212,7 +217,7 @@ public class StationEmulatorViewModel : ViewModel
     public StationEmulatorViewModel()
     {
         TargetTutorialDocument = File.ReadAllText(Path.Join(TutorialDocumentsPath, "Start.md"));
-        IsTutorialMode = Visibility.Visible;
+        IsTutorialMode = true;
         
         StartVm = new StartViewModel(this);
         MainMenuVm = new MainMenuViewModel(this);
