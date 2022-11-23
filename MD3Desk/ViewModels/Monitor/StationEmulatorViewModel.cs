@@ -199,9 +199,7 @@ public class StationEmulatorViewModel : ViewModel
 
     public StationEmulatorViewModel()
     {
-        TargetTutorialDocument = File.ReadAllText(
-            Path.Join(TutorialDocumentsPath, "Start.md")
-            );
+        TargetTutorialDocument = File.ReadAllText(Path.Join(TutorialDocumentsPath, "Start.md"));
         
         StartVm = new StartViewModel(this);
         MainMenuVm = new MainMenuViewModel(this);
