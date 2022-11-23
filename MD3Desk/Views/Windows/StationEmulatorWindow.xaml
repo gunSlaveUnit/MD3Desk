@@ -25,9 +25,9 @@
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         
         <Grid Name="Sensors" Grid.ColumnSpan="2">
@@ -229,8 +229,8 @@
             </Grid>
         </Grid>
         
-        <Grid Grid.Column="2" Grid.RowSpan="2">
-            <mdXaml:MarkdownScrollViewer
+        <Grid Grid.Column="2" Grid.RowSpan="2" Visibility="{Binding IsTutorialMode}">
+            <mdXaml:MarkdownScrollViewer Padding="8"
                 Markdown="{Binding TargetTutorialDocument}"/>
         </Grid>
     </Grid>

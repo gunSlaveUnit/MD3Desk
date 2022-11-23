@@ -1,5 +1,5 @@
-using System;
 using System.IO;
+using System.Windows;
 using System.Windows.Input;
 using MD3Desk.Infrastructure.Commands.Base;
 using MD3Desk.ViewModels.Base;
@@ -11,8 +11,20 @@ namespace MD3Desk.ViewModels;
 public class StationEmulatorViewModel : ViewModel
 {
     #region Properties
-    
+
     private const string TutorialDocumentsPath = "Resources/Tutorials";
+    
+    #region IsTutorialMode
+    
+    private Visibility _isTutorialMode;
+    
+    public Visibility IsTutorialMode
+    {
+        get => _isTutorialMode;
+        private set => Set(ref _isTutorialMode, value);
+    }
+    
+    #endregion
     
     #region TargetTutorialDocument
     
@@ -200,6 +212,7 @@ public class StationEmulatorViewModel : ViewModel
     public StationEmulatorViewModel()
     {
         TargetTutorialDocument = File.ReadAllText(Path.Join(TutorialDocumentsPath, "Start.md"));
+        IsTutorialMode = Visibility.Visible;
         
         StartVm = new StartViewModel(this);
         MainMenuVm = new MainMenuViewModel(this);
