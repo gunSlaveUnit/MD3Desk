@@ -75,6 +75,19 @@ public class MainViewModel : ViewModel
         
     #endregion
     
+    #region NavigateAssemblyCommand
+        
+    private ICommand _navigateAssemblyCommand;
+    public ICommand NavigateAssemblyCommand => _navigateAssemblyCommand
+        ??= new RelayCommand(OnNavigateAssemblyCommandExecuted, CanNavigateAssemblyCommandExecute);
+
+    private void OnNavigateAssemblyCommandExecuted(object parameter)
+        => CurrentViewModel = AssemblyViewModel;
+        
+    private bool CanNavigateAssemblyCommandExecute(object parameter) => true;
+        
+    #endregion
+    
     #endregion
     
     public MainViewModel()
