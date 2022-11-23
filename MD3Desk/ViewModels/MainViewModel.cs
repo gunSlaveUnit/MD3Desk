@@ -34,6 +34,18 @@ public class MainViewModel : ViewModel
 
     #endregion
     
+    #region AssemblyViewModel 
+    
+    private AssemblyViewModel _assemblyViewModel;
+    
+    public AssemblyViewModel AssemblyViewModel
+    {
+        get => _assemblyViewModel;
+        set => Set(ref _assemblyViewModel, value);
+    }
+    
+    #endregion
+    
     #region CurrrentViewModel 
     
     private ViewModel _currentViewModel;
@@ -70,6 +82,7 @@ public class MainViewModel : ViewModel
         StationEmulatorWindow = new StationEmulatorWindow();
 
         MainProgramMenuVm = new MainProgramMenuViewModel(this);
+        AssemblyViewModel = new AssemblyViewModel(this);
 
         CurrentViewModel = MainProgramMenuVm;
     }
