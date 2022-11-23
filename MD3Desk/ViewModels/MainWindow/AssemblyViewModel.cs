@@ -9,7 +9,7 @@ public class AssemblyViewModel : Child<MainViewModel>
 {
     #region Properties
 
-    private const String VideosPath = "MD3Desk/Resources/Videos";
+    private const String VideosPath = "Resources/Videos";
 
     #region Videos
     

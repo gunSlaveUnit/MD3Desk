@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
+      <PackageReference Include="MdXaml" Version="1.16.2" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using System.Windows.Input;
 using MD3Desk.Infrastructure.Commands.Base;
 using MD3Desk.ViewModels.Base;
@@ -9,6 +11,20 @@ namespace MD3Desk.ViewModels;
 public class StationEmulatorViewModel : ViewModel
 {
     #region Properties
+    
+    private const string TutorialDocumentsPath = "Resources/Tutorials";
+    
+    #region TargetTutorialDocument
+    
+    private string _targetTutorialDocument;
+    
+    public string TargetTutorialDocument
+    {
+        get => _targetTutorialDocument;
+        private set => Set(ref _targetTutorialDocument, value);
+    }
+    
+    #endregion
 
     #region StartViewModel
     
@@ -183,6 +199,10 @@ public class StationEmulatorViewModel : ViewModel
 
     public StationEmulatorViewModel()
     {
+        TargetTutorialDocument = File.ReadAllText(
+            Path.Join(TutorialDocumentsPath, "Start.md")
+            );
+        
         StartVm = new StartViewModel(this);
         MainMenuVm = new MainMenuViewModel(this);
         SHOSVm = new SHOSViewModel(this);
