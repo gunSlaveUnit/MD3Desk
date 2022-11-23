@@ -12,7 +12,5 @@
         <viewModels:MainViewModel/>
     </Window.DataContext>
     
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button Command="{Binding OpenStationEmulatorCommand}">Работа на эмуляторе</Button>
-    </StackPanel>
+    <UserControl Content="{Binding CurrentViewModel }"/>
 </Window>
