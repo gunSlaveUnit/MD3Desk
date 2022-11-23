@@ -2,7 +2,7 @@ using MD3Desk.ViewModels.Base;
 
 namespace MD3Desk.ViewModels.Monitor;
 
-public class SHOSViewModel : Child
+public class SHOSViewModel : Child<StationEmulatorViewModel>
 {
     public readonly bool IsConfigured;
 
