@@ -193,7 +193,12 @@ public class StationEmulatorViewModel : ViewModel
         ??= new RelayCommand(OnNavigateSettingsCommandExecuted, CanNavigateSettingsCommandExecute);
 
     private void OnNavigateSettingsCommandExecuted(object parameter)
-        => CurrentViewModel = SettingsVm;
+    {
+        if (IsTutorialMode)
+            TargetTutorialDocument = File.ReadAllText(Path.Join(TutorialDocumentsPath, "Settings.md"));
+        
+        CurrentViewModel = SettingsVm;
+    } 
         
     private bool CanNavigateSettingsCommandExecute(object parameter) => true;
         

@@ -14,6 +14,7 @@
 
     <ItemGroup>
       <Content Include="bin\Debug\net6.0-windows\Resources\Tutorials\Main.md" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Tutorials\Settings.md" />
       <Content Include="bin\Debug\net6.0-windows\Resources\Tutorials\Start.md" />
       <Content Include="bin\Debug\net6.0-windows\Resources\Videos\1.wmv" />
       <Content Include="bin\Debug\net6.0-windows\Resources\Videos\2.wmv" />

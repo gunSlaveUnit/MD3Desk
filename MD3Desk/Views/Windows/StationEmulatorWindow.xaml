@@ -230,7 +230,7 @@
         </Grid>
         
         <Grid Grid.Column="2" Grid.RowSpan="2">
-            <mdXaml:MarkdownScrollViewer Padding="8"
+            <mdXaml:MarkdownScrollViewer Padding="8 0 0 0"
                 Markdown="{Binding TargetTutorialDocument}"/>
         </Grid>
     </Grid>
