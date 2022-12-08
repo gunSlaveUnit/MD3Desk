@@ -1,0 +1,80 @@
+<UserControl x:Class="MD3Desk.Views.Displays.Regulations.Mode.Mode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MD3Desk.Views.Displays.Regulations"
+             mc:Ignorable="d"
+             Background="#141519"
+             Padding="16"
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Border Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" 
+                BorderBrush="#fbb019" BorderThickness="2">
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Foreground="#fbb019"
+                       Text="ВВОД РЕЖИМНЫХ ПАРАМЕТРОВ"/>
+        </Border>
+        
+        <Button Grid.Row="1" Grid.Column="0"
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">1. Общее</Button>
+        
+        <Button Grid.Row="2" Grid.Column="0"
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">2. ПГ-Л</Button>
+        
+        <Button Grid.Row="3" Grid.Column="0"
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">3. КЛ-У</Button>
+        
+        <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">4. ДМД, УЗОЗМ</Button>
+        
+        <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">5. ТРАКТЫ ПРД, ПРМ</Button>
+        
+        <Button Grid.Row="1" Grid.Column="3"
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">6. Л807</Button>
+            
+        <Button Grid.Row="1" Grid.Column="3"
+                BorderBrush="#fbb019"
+                BorderThickness="2"
+                Background="#141519" Foreground="#fbb019">6. Л807</Button>
+            
+            <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"
+                       Foreground="#fbb019"
+                       TextWrapping="Wrap"
+                       Text="Внимание! Вы вошли в технологический режим управления станцией. Коррекция режимных параметров может привести к нарушению рабочего режима"/>
+            
+            <Button Grid.Row="4" Grid.Column="3"
+                    BorderBrush="#fbb019"
+                    BorderThickness="2"
+                    Background="#141519" Foreground="#fbb019">0. Выход</Button>
+    </Grid>
+</UserControl>
